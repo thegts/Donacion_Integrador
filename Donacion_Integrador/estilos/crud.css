@@ -1,0 +1,174 @@
+:root {
+    --color-primary: #8d6e51;
+    --color-secondary: #ad8864;
+    --color-accent: #fff5e6;
+    --color-bg: #f6f3ef;
+    --color-shadow: rgba(141, 110, 81, 0.08);
+    --color-border: #dfd6c3;
+    --color-heading: #5a4633;
+    --color-light: #fffdf8;
+}
+
+/* Reset & fuentes */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { font-family: 'Segoe UI', 'Montserrat', sans-serif; background: var(--color-bg); }
+
+a { text-decoration: none; color: var(--color-primary); transition: color 0.3s; }
+a:hover { color: var(--color-secondary); }
+
+.titulo-especial {
+    color: #000000;
+}
+
+.main-content {
+    margin-left: 250px;
+    width: calc(100% - 250px);
+    padding: 2.5rem 1.5rem;
+}
+
+h1, h2 {
+    color: var(--color-primary);
+    font-weight: 700;
+    margin-bottom: 1.3rem;
+    letter-spacing: 0.5px;
+}
+
+.users-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto 2.2rem auto;
+    padding: 28px 32px;
+    border-radius: 14px;
+    background: var(--color-light);
+    box-shadow: 0 8px 24px var(--color-shadow);
+    border: 1.5px solid var(--color-border);
+    transition: box-shadow 0.3s;
+}
+
+.users-form form input {
+    padding: 13px 16px;
+    font-size: 1.03em;
+    border: 1.5px solid var(--color-border);
+    border-radius: 8px;
+    outline: none;
+    background: #fcfaf7;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.users-form form input[type=text]:focus,
+.users-form form input[type=email]:focus,
+.users-form form input[type=tel]:focus {
+    border-color: var(--color-secondary);
+    box-shadow: 0 0 6px 0 var(--color-secondary);
+}
+
+.users-form form input[type=submit] {
+    padding: 13px 0;
+    background: var(--color-primary);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.15em;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 4px;
+    transition: background 0.3s;
+}
+
+.users-form form input[type=submit]:hover {
+    background: var(--color-secondary);
+    color: #fff;
+}
+
+.users-table {
+    margin-top: 25px;
+}
+
+.users-table h2 {
+    color: var(--color-heading);
+    font-weight: 700;
+    font-size: 1.35em;
+}
+
+.users-table table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: #fffdf8;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 24px var(--color-shadow);
+    margin: 15px 0 0 0;
+}
+
+table th, table td {
+    padding: 15px 12px;
+    font-size: 1em;
+    text-align: center;
+    border-bottom: 1.5px solid var(--color-border);
+}
+
+table th {
+    background: var(--color-primary);
+    color: #fff;
+    font-weight: bold;
+    border-bottom: 2.5px solid var(--color-secondary);
+    letter-spacing: 1px;
+}
+
+table tr {
+    transition: background 0.22s;
+}
+
+table tr:hover {
+    background: var(--color-accent);
+}
+
+.users-table--edit, .users-table--delete {
+    display: inline-block;
+    padding: 8px 17px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.98em;
+    margin: 2px 0;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.users-table--edit {
+    background: #60a100;
+    color: #fff;
+}
+.users-table--edit:hover {
+    background: #78c024;
+    transform: translateY(-2px) scale(1.07);
+}
+.users-table--delete {
+    background: #e74c3c;
+    color: #fff;
+}
+.users-table--delete:hover {
+    background: #c0392b;
+    transform: translateY(-2px) scale(1.07);
+}
+
+/* Botón agregar (moderno) */
+.btn-agregar {
+    display: inline-block;
+    background: var(--color-secondary);
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 26px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 18px;
+    font-size: 1.1em;
+    box-shadow: 0 3px 14px var(--color-shadow);
+    transition: background 0.22s;
+}
+.btn-agregar:hover {
+    background: var(--color-primary);
+}
